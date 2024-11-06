@@ -1,0 +1,298 @@
+/* Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Theme Colors */
+:root {
+    --primary-color: #1cd899; /* Dark Green */
+    --secondary-color: #002147; /* Navy Blue */
+    --background-color: #f4f4f4; /* Light Grey */
+    --text-color: #333; /* Dark text */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Header and Hero Section */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+header p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+/* Hero Section Background Image */
+.hero-section {
+    position: relative;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/land-surveying.jpg'); /* Use your desired image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Controls the visibility of the image */
+    z-index: -1; /* Places the image behind the text */
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    z-index: 1; /* Keeps the title in front of the image */
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+.cta-button {
+    background-color: white;
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+
+/* Main Content */
+main {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+main h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+main p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+section p {
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Service Cards */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.service-card {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.service-card h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+.service-card p {
+    color: var(--text-color);
+    margin-top: 0.5rem;
+}
+
+/* Button Styles */
+button, .button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+button:hover, .button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: var(--background-color);
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: nowrap; /* Keeps testimonials in a single row */
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+.testimonial {
+    background-color: white;
+    padding: 2rem;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking of individual testimonials */
+    transition: transform 0.3s ease;
+}
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+.testimonial p {
+    font-style: italic;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+.testimonial span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.testimonial .person-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #ddd;
+    background-image: url('icons/person-placeholder.png'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Contact Form */
+#contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#contact-form label {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+#contact-form input, #contact-form textarea, #contact-form button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 100%;
+}
+#contact-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+#contact-form button:hover {
+    background-color: #001f33;
+}
+
+/* Social Media Section */
+#social-media {
+    text-align: center;
+    padding: 2rem;
+}
+#social-media h2 {
+    color: var(--primary-color);
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
