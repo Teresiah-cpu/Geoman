@@ -7,23 +7,30 @@
     <link rel="stylesheet" href="geoman.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="geoman.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="properties.html">Properties</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <h1>Contact Us</h1>
-        <p>We’re here to help! Reach out to us through any of the methods below.</p>
+        <nav>
+            <button id="mobile-menu-toggle" class="menu-toggle">&#9776;</button>    
+            <ul>
+                <li><a href="geoman.html"><img src="images\geomanlogo.png" alt="Geoman Logo" class="logo"></a></li>
+                <li><a href="geoman.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="#contact.html">Contact Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="ongoingprojects.html">Ongoing Projects</a></li>
+            </ul>
+        </nav>
+
     </header>
 
     <main>
         <!-- Contact Information Section -->
+         <!-- <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="canvas-for-googlemap" style="height:100%; 
+            width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" 
+            src="https://www.google.com/maps/embed/v1/place?q=superior+acarde+5th+floor+room7&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div>
+            <a class="googlemaps-made" href="https://www.bootstrapskins.com/themes" id="auth-map-data">premium bootstrap themes</a><style>#canvas-for-googlemap img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>-->
+
         <section id="contact-info">
             <div class="contact-item">
                 <h3>Phone</h3>
@@ -74,7 +81,32 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Geoman Land Selling & Surveying Co. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Geoman Land Co.</h3>
+                <p>Providing professional and precise land surveying, sales, and property documentation services.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="geoman.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>📞 +254 700 000 000</p>
+                <p>📧 info@geoman.co.ke</p>
+                <p>📍 Nairobi, Kenya</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Geoman Land Selling & Surveying Co. All rights reserved.</p>
+        </div>
     </footer>
+    <script src="geoman.js"></script>
 </body>
 </html>

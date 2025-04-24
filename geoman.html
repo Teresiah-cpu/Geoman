@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,31 +7,64 @@
     <link rel="stylesheet" href="geoman.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="geoman.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="properties.html">Properties</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <button id="mobile-menu-toggle" class="menu-toggle">&#9776;</button>    
+            <ul>
+                <li><a href="geoman.html"><img src="images\geomanlogo.png" alt="Geoman Logo" class="logo"></a></li>
+                <li><a href="geoman.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="#contact.html">Contact Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="ongoingprojects.html">Ongoing Projects</a></li>
+            </ul>
+        </nav>
 
-    <header class="hero-section">
-        <div class="hero-image"></div> <!-- This div will hold the background image -->
-        <h1>Welcome to Geoman Land Selling & Surveying Co.</h1>
-        <p>Professional and Precise property solutions</p>
-        <button class="cta-button">Explore Services</button>
     </header>
-    
 
     <main>
-        <!-- Welcome Section -->
-        <section class="welcome-section">
-            <h2>About Us</h2>
-            <p>At Geoman, we pride ourselves on delivering precise and reliable land surveying and property services to our clients. Our team of experts is dedicated to helping you with everything from property boundary surveys to topographical assessments and legal land identification.</p>
-            <button class="learn-more-button">Learn More</button>
+        <section class="hero">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>Welcome to Geoman Land Surveyors</h1>
+                    <p>Professional and Precise Property Solutions</p>
+                    <a href="services.html" class="cta-button">Explore Services</a>
+                </div>
+                <div class="scroll-indicator">&#8595;</div>
+            </div>
         </section>
+
+        <section class="about-us-section">
+            <h2>About Us</h2>
+           <!-- <img src="images/beacon1.jpeg" alt="Geoman Photo" class="about-main-img">-->
+            
+            <p class="intro">
+                At Geoman, we pride ourselves on delivering precise and reliable land surveying and property services to our clients.
+            </p>
+        
+            <p class="more-text" style="display: none;">
+                Our team of experts is dedicated to helping you with everything from property boundary surveys to topographical assessments and legal land identification. We ensure our work aligns with Kenya’s land regulations and is backed by the latest surveying technology.
+            </p>
+        
+            <!--<a href="aboutus.html" class="learn-more-button">Learn More</a>-->
+            <a href="aboutus.html" class="learn-more-button">Learn More</a>
+
+
+
+        
+            <div class="about-gallery">
+                <img src="images\geoman photo 1.png" alt="Surveying Work">
+                <img src="images\surveyor 2.jpeg" alt="Team in Field">
+                <img src="images\geoman photo2.jpeg" alt="Surveying Work">
+                <img src="images\tittledeed1.jpeg" alt="Tittledeed">
+            </div>
+        </section>
+        
+       
+            
+        
 
         <!-- Featured Services Section -->
         <section class="featured-services">
@@ -40,6 +73,10 @@
                 <div class="service-card">
                     <h3>Boundary Survey</h3>
                     <p>Ensure accurate property boundaries and avoid disputes with our professional boundary surveying.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Engineering Survey</h3>
+                    <p>Support your construction projects with precise data on elevations, terrain, and alignment.</p>
                 </div>
                 <div class="service-card">
                     <h3>Engineering Survey</h3>
@@ -73,6 +110,12 @@
                     <p>"Geoman Land Selling & Surveying Co. helped me with a precise land survey that saved time and money. Highly recommended!"</p>
                     <span>Wambui Bobo</span>
                 </div>
+                
+                <div class="testimonial">
+                    <div class="person-icon"></div> <!-- Placeholder icon -->
+                    <p>"Their team is professional and thorough. The property boundaries were clearly marked, and their consultations were invaluable."</p>
+                    <span>Dan Mburu</span>
+                </div>
                 <div class="testimonial">
                     <div class="person-icon"></div> <!-- Placeholder icon -->
                     <p>"Their team is professional and thorough. The property boundaries were clearly marked, and their consultations were invaluable."</p>
@@ -89,10 +132,53 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Geoman Land Selling & Surveying Co. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Geoman Land Co.</h3>
+                <p>Providing professional and precise land surveying, sales, and property documentation services.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="geoman.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>📞 +254 700 000 000</p>
+                <p>📧 info@geoman.co.ke</p>
+                <p>📍 Nairobi, Kenya</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Geoman Land Selling & Surveying Co. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="geoman.js"></script>
 
+    
+    <script src="geoman.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const aboutSection = document.querySelector(".about-us-section");
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        aboutSection.classList.add("fade-in");
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+        
+            observer.observe(aboutSection);
+        });
+        </script>
+        
 
 </body>
 </html>

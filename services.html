@@ -7,74 +7,112 @@
     <link rel="stylesheet" href="geoman.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="geoman.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="aboutus.html">About us</a></li>
-            <li><a href="properties.html">Properties</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <h1>Our Services</h1>
-        <p>Explore the range of services we offer to support your land needs.</p>
+        <nav>
+            <button id="mobile-menu-toggle" class="menu-toggle">&#9776;</button>
+            <ul id="nav-links">
+                <li><a href="geoman.html"><img src="images/geomanlogo.png" alt="Geoman Logo" class="logo"></a></li>
+                <li><a href="geoman.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="ongoingprojects.html">Ongoing Projects</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section id="services-list">
             <h2>Land Surveying & Sales Services</h2>
-            
-            <article class="service">
-                <h3>Boundary Survey</h3>
-                <p>Determine the exact boundaries of a property to avoid disputes and ensure clarity in ownership.</p>
-            </article>
 
-            <article class="service">
-                <h3>Parcel Identification</h3>
-                <p>Identify and verify individual land parcels, providing essential information for land transactions and legal processes.</p>
-            </article>
+            <div class="services-grid">
+                <article class="service">
+                    <img src="https://images.unsplash.com/photo-1680089606451-fa249c95eaa6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFuZCUyMHN1cnZleXxlbnwwfHwwfHx8MA%3D%3Dg" alt="Boundary Survey">
+                    <h3>Boundary Survey</h3>
+                    <p>Determine exact boundaries of a property to avoid disputes and ensure clarity in ownership.</p>
+                </article>
 
-            <article class="service">
-                <h3>Sectional Property</h3>
-                <p>Specialized surveying for sectional or condominium properties, ensuring accurate division and management.</p>
-            </article>
+                <article class="service">
+                    <img src="https://images.unsplash.com/photo-1654163600175-efc47ce20b29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGFyY2VsJTIwaWRlbnRpZmljYXRpb258ZW58MHx8MHx8fDA%3D" alt="Parcel Identification">
+                    <h3>Parcel Identification</h3>
+                    <p>Identify and verify individual land parcels for transactions and legal processes.</p>
+                </article>
 
-            <article class="service">
-                <h3>Engineering Survey</h3>
-                <p>Support construction projects with precise surveying data, including elevations, terrain analysis, and alignment details.</p>
-            </article>
+                <article class="service">
+                    <img src="https://plus.unsplash.com/premium_photo-1742418033068-0f91133ad31c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U2VjdGlvbmFsJTIwUHJvcGVydHklMjAlMjBzdXJ2ZXl8ZW58MHx8MHx8fDA%3D" alt="Sectional Property">
+                    <h3>Sectional Property</h3>
+                    <p>Surveying for condominiums ensuring accurate division and management.</p>
+                </article>
 
-            <article class="service">
-                <h3>Consultations</h3>
-                <p>Professional guidance on all land-related questions, from property purchases to development regulations.</p>
-            </article>
+                <article class="service">
+                    <img src="https://img.freepik.com/free-photo/working-housing-project_1098-17511.jpg?ga=GA1.1.1643427876.1734707350&semt=ais_hybrid&w=740" alt="Boundary Survey" alt="Engineering Survey">
+                    <h3>Engineering Survey</h3>
+                    <p>Provide elevation, terrain, and alignment data for construction projects.</p>
+                </article>
 
-            <article class="service">
-                <h3>Cadastral Survey</h3>
-                <p>Conduct cadastral surveys to define property boundaries for legal documentation and land registration.</p>
-            </article>
+                <article class="service">
+                    <img src="https://img.freepik.com/free-photo/afro-american-man-suit-holding-documents-talking-female-boss_1098-20604.jpg?ga=GA1.1.1643427876.1734707350&semt=ais_hybrid&w=740" alt="Boundary Survey" alt="Consultations">
+                    <h3>Consultations</h3>
+                    <p>Guidance on land purchases, development, and legal concerns.</p>
+                </article>
 
-            <article class="service">
-                <h3>Beacon Replacement</h3>
-                <p>Replace or restore boundary markers (beacons) that have been removed, ensuring property limits are clearly marked.</p>
-            </article>
+                <!--<article class="service">
+                    <img src="https://images.unsplash.com/photo-1680089606451-fa249c95eaa6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFuZCUyMHN1cnZleXxlbnwwfHwwfHx8MA%3D%3Dg" alt="Boundary Survey" alt="Cadastral Survey">
+                    <h3>Cadastral Survey</h3>
+                    <p>Legal documentation and registration of property boundaries.</p>
+                </article>-->
 
-            <article class="service">
-                <h3>Topographical Survey</h3>
-                <p>Capture the natural and man-made features of the land to inform design, planning, and development projects.</p>
-            </article>
+                <article class="service">
+                    <img src="images\beacon2.jpeg" alt="beacon replacement">
+                    <h3>Beacon Replacement</h3>
+                    <p>Restore removed boundary markers to define property limits.</p>
+                </article>
 
-            <article class="service">
-                <h3>Mutation Surveys</h3>
-                <p>Adjust property boundaries through mutation surveys to support changes in land ownership and management.</p>
-            </article>
+                <article class="service">
+                    <img src="images\geoman photo2.jpeg" alt="Topographical Survey">
+                    <h3>Topographical Survey</h3>
+                    <p>Map natural and man-made features for planning and development.</p>
+                </article>
+
+                <article class="service">
+                    <img src="images\map1.jpeg" alt="Mutation Surveys">
+                    <h3>Mutation Surveys</h3>
+                    <p>Adjust boundaries for changes in land ownership and usage.</p>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Geoman Land Selling & Surveying Co. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Geoman Land Co.</h3>
+                <p>Providing precise land surveying, sales, and documentation services.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="geoman.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>📞 +254 700 000 000</p>
+                <p>📧 info@geoman.co.ke</p>
+                <p>📍 Nairobi, Kenya</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Geoman Land Selling & Surveying Co. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="geoman.js"></script>
 </body>
 </html>
